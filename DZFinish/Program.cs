@@ -23,5 +23,9 @@ string[] newArray = new string[array.Length];
             }
         }
 
-        
+        Array.Resize(ref newArray, count);
+
+        Console.WriteLine("Первоначальный массив: [" + string.Join(", ", array) + "]");
+        Console.WriteLine("Новый массив: [" + string.Join(", ", newArray) + "]");
+
         
